@@ -25,12 +25,12 @@ function changecolor(color,delay){
     return new Promise((resolve,rejected)=>{
         setTimeout(()=>{
         let num=Math.floor(Math.random()*10)+1;
-        if(num>7){
+        if(num>8){
             rejected("error and rejected");
         }    
         h1.style.color=color;
         resolve(`${color} is changed`);
-        console.log(`${color} is changed`);
+        console.log(`this ${color} is changed`);
         },delay);
 
     }); 
